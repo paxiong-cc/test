@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>add esss</div>
+    <div>add esssff</div>
     <Header @adds="add" />
     <div v-for="(item, idx) in list" :key="idx" style="display: flex">
       <div style="margin-right: 10px">{{ item }}</div>
