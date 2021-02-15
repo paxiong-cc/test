@@ -9,8 +9,10 @@ RUN npm install --registry=https://registry.npm.taobao.org \
     && npm run build
 
 # production stage
-COPY --from=build-stage /app/dist /opt/app/nginx/html
+FROM nginx:stable-alpine as production-stage
 
-#EXPOSE 80
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 
-#CMD ["docker", "start", "nginx"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
