@@ -11,6 +11,6 @@ RUN npm install --registry=https://registry.npm.taobao.org \
 # production stage
 COPY --from=build-stage /app/dist /opt/app/nginx/html
 
-EXPOSE 80
+#EXPOSE 80
 
-CMD ["docker", "start", "nginx"]
+#CMD ["docker", "start", "nginx"]
