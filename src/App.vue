@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>f4</div>
+    <div>鬼子个</div>
     <Header @adds="add" />
     <div v-for="(item, idx) in list" :key="idx" style="display: flex">
       <div style="margin-right: 10px">{{ item }}</div>
