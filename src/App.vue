@@ -1,7 +1,7 @@
 <template>
   <div class="cc">
     <div>
-      <div>x李克</div>
+      <div>x李克ddd</div>
       <Header @adds="add" />
       <div v-for="(item, idx) in list" :key="idx" style="display: flex">
         <div style="margin-right: 10px">{{ item }}</div>
