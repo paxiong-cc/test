@@ -9,7 +9,7 @@
         <div @click="deletes(idx)" class="delete" style="margin-right: 10px">-</div>
         <div @click="edit(idx)">edit</div>
       </div>
-      hahhaaha
+      ql
       <AsdHeader></AsdHeader>
     </div>
 
